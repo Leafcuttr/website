@@ -1,8 +1,12 @@
 <header class="site-header">
   <div class="page-content header-shell" style="padding:0 2rem">
     <a href="{{ '/' | relative_url }}" class="logo" aria-label="Leafcuttr home">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48">
       <span class="brand-name">Leafcuttr</span>
     </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-icon"></span>
+    </button>
     {% include nav.html %}
   </div>
 </header>

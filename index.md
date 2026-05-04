@@ -57,7 +57,7 @@ description: "Leafcuttr is a Kafka-compatible edge streaming broker designed for
 
 <section class="section solution-section">
   <div class="section-shell">
-    <h2>Meet LeafCuttr</h2>
+    <h2 style="display: flex; align-items: center; gap: 0px;">Meet LeafCuttr <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48"></h2>
     <p class="section-lead">LeafCuttr is a lightweight, Kafka-compatible streaming platform built specifically for edge environments.</p>
     <div class="solution-row">
       <article class="solution-item">

@@ -5,7 +5,6 @@ description: "Reach the LeafCuttr team about design partnerships, product questi
 ---
 
 <section class="section">
-  <h2>Contact</h2>
   <p>Leafcuttr is built for teams that need streaming to work where the data is actually created. If you are evaluating an edge deployment, we want to hear from you.</p>
 
   <div class="contact-layout">
