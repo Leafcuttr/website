@@ -1,0 +1,23 @@
+title: Leafcuttr
+tagline: "Edge-native streaming for the real world"
+description: "LeafCuttr is a Kafka-compatible, lightweight edge streaming platform built for flaky networks, constrained devices, and high-volume edge data."
+og_image: "/assets/images/og-image.svg"
+og_type: "website"
+twitter_card: "summary_large_image"
+baseurl: ""
+url: "https://leafcuttr.github.io"
+permalink: pretty
+markdown: kramdown
+include:
+  - _pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+sass:
+  sass_dir: _sass
+  style: compressed
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: page

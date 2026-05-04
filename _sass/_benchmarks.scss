@@ -1,0 +1,204 @@
+.bench-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.benchmarks-shell {
+  display: grid;
+  gap: 2rem;
+}
+
+.benchmarks-hero {
+  max-width: 52rem;
+}
+
+.benchmarks-eyebrow {
+  margin: 0 0 0.75rem;
+  color: $accent;
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.benchmarks-hero h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.benchmarks-snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.benchmark-snapshot-card {
+  min-height: 100%;
+}
+
+.benchmark-snapshot__value {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: $text;
+}
+
+.benchmark-snapshot-card p {
+  margin: 0;
+  color: $muted;
+}
+
+.benchmarks-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.benchmarks-section__header {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.benchmarks-section__header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.benchmarks-section__header p {
+  margin: 0;
+  color: $muted;
+}
+
+.benchmark-chart {
+  padding-top: 0.25rem;
+}
+
+.benchmark-table-wrap {
+  overflow-x: auto;
+  border: 1px solid $border;
+  border-radius: calc($radius * 1.25);
+}
+
+.bench-table th {
+  background: $surface;
+  color: $accent;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid $accent;
+}
+
+.bench-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid $border;
+}
+
+.bench-table .highlight-lc {
+  background: rgba($accent2, 0.05);
+}
+
+.bench-table .highlight-ak {
+  background: rgba($accent, 0.05);
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bar-label {
+  width: 260px;
+  font-size: 0.875rem;
+  color: $muted;
+}
+
+.bar-track {
+  flex: 1;
+  background: $border;
+  border-radius: 4px;
+  height: 28px;
+  overflow: hidden;
+}
+
+.bar-value {
+  min-width: 7.5rem;
+  text-align: right;
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: $text;
+  white-space: nowrap;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: $accent;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #000;
+  transition: width 1s ease;
+  width: 0;
+}
+
+.bar-fill.lc {
+  background: $accent;
+}
+
+.bar-fill.ak {
+  background: #2a5fa8;
+}
+
+.benchmarks-note {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.benchmarks-note h3 {
+  margin: 0;
+}
+
+.benchmarks-note p {
+  margin: 0;
+  color: $muted;
+}
+
+.benchmarks-actions {
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .benchmarks-snapshot {
+    grid-template-columns: 1fr;
+  }
+
+  .bar-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .bar-label {
+    width: 100%;
+  }
+
+  .bar-track {
+    order: 3;
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .bar-value {
+    order: 2;
+    min-width: 0;
+    margin-left: auto;
+  }
+}

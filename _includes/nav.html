@@ -1,0 +1,18 @@
+<nav aria-label="Main navigation">
+  <ul class="site-nav-list">
+    <li><a class="{% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
+    <li class="site-nav-group{% if page.url == '/features/' or page.url == '/modes/' or page.url == '/benchmarks/' or page.url == '/architecture/' %} active{% endif %}">
+      <details class="site-nav-dropdown">
+        <summary class="site-nav-summary">Explore</summary>
+        <ul class="site-nav-panel" aria-label="Explore pages">
+          <li><a class="{% if page.url == '/features/' %}active{% endif %}" href="{{ '/features/' | relative_url }}">Features</a></li>
+          <li><a class="{% if page.url == '/modes/' %}active{% endif %}" href="{{ '/modes/' | relative_url }}">Modes</a></li>
+          <li><a class="{% if page.url == '/architecture/' %}active{% endif %}" href="{{ '/architecture/' | relative_url }}">Architecture</a></li>
+          <li><a class="{% if page.url == '/benchmarks/' %}active{% endif %}" href="{{ '/benchmarks/' | relative_url }}">Benchmarks</a></li>
+        </ul>
+      </details>
+    </li>
+    <li><a href="https://leafcuttr.github.io" target="_blank" rel="noopener noreferrer" data-no-active="true">Docs</a></li>
+    <li><a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a></li>
+  </ul>
+</nav>

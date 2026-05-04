@@ -1,0 +1,69 @@
+throughput:
+  - label: "Untuned Producer - LC (tmpfs)"
+    value: 87.64
+    type: lc
+  - label: "Untuned Producer - AK (tmpfs)"
+    value: 72.1
+    type: ak
+  - label: "Tuned Producer - LC (fsync)"
+    value: 32.53
+    type: lc
+  - label: "Tuned Producer - AK (fsync)"
+    value: 23.21
+    type: ak
+  - label: "Untuned Producer - LC (fsync)"
+    value: 3.55
+    type: lc
+  - label: "Untuned Producer - AK (fsync)"
+    value: 1.96
+    type: ak
+supplementary:
+  - label: "RedPanda Docker (acks=all)"
+    tp: 25.11
+    avg_lat: 1239
+    max_lat: 3771
+    p50: 1169
+    p999: 3721
+  - label: "AK 4.0.0 Docker no flush"
+    tp: 58.22
+    avg_lat: 532
+    max_lat: 960
+    p50: 518
+    p999: 949
+  - label: "AK 4.0.0 Docker flush interval 1"
+    tp: 8.9
+    avg_lat: 3433
+    max_lat: 7733
+    p50: 3212
+    p999: 7711
+  - label: "AK 4.0.0 Native no flush"
+    tp: 63.53
+    avg_lat: 487
+    max_lat: 929
+    p50: 476
+    p999: 916
+  - label: "AK 4.0.0 Native flush interval 1"
+    tp: 8.44
+    avg_lat: 3640
+    max_lat: 6752
+    p50: 3644
+    p999: 6741
+  - label: "LC Mod Native no flush"
+    tp: 65.59
+    avg_lat: 468
+    max_lat: 944
+    p50: 453
+    p999: 933
+  - label: "LC Mod Native flush interval 1"
+    tp: 9.48
+    avg_lat: 3228
+    max_lat: 5158
+    p50: 3139
+    p999: 5148
+  - label: "LC Mod Native Sync Mode ✦"
+    tp: 12.67
+    avg_lat: 2413
+    max_lat: 3769
+    p50: 2392
+    p999: 3752
+    highlight: lc

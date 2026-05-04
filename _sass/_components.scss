@@ -1,0 +1,194 @@
+@use "sass:color";
+
+.badge {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background: rgba($accent, 0.15);
+  color: $accent;
+  border: 1px solid $accent;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+}
+
+.feature-teaser {
+  opacity: 0.6;
+  border-style: dashed;
+}
+
+.feature-teaser .badge {
+  background: rgba($accent2, 0.08);
+  border-color: rgba($accent2, 0.45);
+  color: $accent2;
+}
+
+.btn {
+  display: inline-block;
+  background: $accent;
+  color: #000;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: $radius;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: color.adjust($accent, $lightness: 10%);
+  text-decoration: none;
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 1px solid $accent;
+  color: $accent;
+  background: transparent;
+  padding: 0.75rem 2rem;
+  border-radius: $radius;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: $accent;
+  color: #000;
+  text-decoration: none;
+}
+
+.problem-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $border;
+  list-style: none;
+}
+
+.problem-list li::before {
+  content: "→ ";
+  color: $muted;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mode-tag {
+  display: inline-block;
+  background: rgba($accent2, 0.1);
+  color: $accent2;
+  border-radius: $radius;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.callout {
+  border-left: 3px solid $accent;
+  padding: 1rem 1.5rem;
+  background: $surface;
+  border-radius: 0 $radius $radius 0;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+.footer-link {
+  color: $accent;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-note {
+  color: $muted;
+  font-size: 0.875rem;
+}
+
+.footer-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.footer-link-list a {
+  color: $text;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-link-list a:hover {
+  color: $accent;
+  text-decoration: underline;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.contact-form {
+  gap: 1.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  color: $text;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid $border;
+  border-radius: $radius;
+  background: rgba($bg, 0.35);
+  color: $text;
+  font: inherit;
+  line-height: 1.6;
+  padding: 0.9rem 1rem;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: $muted;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid $accent;
+  outline-offset: 2px;
+  border-color: $accent;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-aside {
+  align-self: stretch;
+}

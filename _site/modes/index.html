@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deployment Modes | Leafcuttr</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Deployment Modes | Leafcuttr</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Deployment Modes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LeafCuttr deploys in gateway or sidecar modes depending on whether the edge needs fan-in, local resilience, or embedded operation." />
+<meta property="og:description" content="LeafCuttr deploys in gateway or sidecar modes depending on whether the edge needs fan-in, local resilience, or embedded operation." />
+<link rel="canonical" href="https://leafcuttr.github.io/modes/" />
+<meta property="og:url" content="https://leafcuttr.github.io/modes/" />
+<meta property="og:site_name" content="Leafcuttr" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Deployment Modes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"LeafCuttr deploys in gateway or sidecar modes depending on whether the edge needs fan-in, local resilience, or embedded operation.","headline":"Deployment Modes","url":"https://leafcuttr.github.io/modes/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://leafcuttr.github.io/assets/images/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://leafcuttr.github.io/assets/images/og-image.svg">
+    <script src="/assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="page-content header-shell" style="padding:0 2rem">
+    <a href="/" class="logo" aria-label="Leafcuttr home">
+      <span class="brand-name">Leafcuttr</span>
+    </a>
+    <nav aria-label="Main navigation">
+  <ul class="site-nav-list">
+    <li><a class="" href="/">Home</a></li>
+    <li class="site-nav-group active">
+      <details class="site-nav-dropdown">
+        <summary class="site-nav-summary">Explore</summary>
+        <ul class="site-nav-panel" aria-label="Explore pages">
+          <li><a class="" href="/features/">Features</a></li>
+          <li><a class="active" href="/modes/">Modes</a></li>
+          <li><a class="" href="/architecture/">Architecture</a></li>
+          <li><a class="" href="/benchmarks/">Benchmarks</a></li>
+        </ul>
+      </details>
+    </li>
+    <li><a href="https://leafcuttr.github.io" target="_blank" rel="noopener noreferrer" data-no-active="true">Docs</a></li>
+    <li><a class="" href="/contact/">Contact</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+    <main>
+      <div class="page-content">
+  <h1>Deployment Modes</h1>
+  <section class="section modes-section">
+  <div class="section-shell modes-shell">
+    <div class="modes-hero">
+      <p class="modes-eyebrow">Deployment</p>
+      <h2>Choose the shape that fits the edge</h2>
+      <p class="section-lead">LeafCuttr can run as a shared edge gateway, a sidecar beside your workload, or an agent journal layer for autonomous systems.</p>
+    </div>
+
+    <div class="modes-grid">
+      <article class="card mode-card mode-card--featured">
+        <div class="mode-card__header">
+          <span class="mode-tag">Gateway / Mesh Mode</span>
+          <span class="mode-card__badge">Best for fan-in</span>
+        </div>
+        <h3>Distributed edge clusters with high fan-in</h3>
+        <p>Many devices converge on a shared edge broker with automatic failover between nodes.</p>
+        <ul class="mode-list">
+          <li>Shared broker for multiple devices and applications</li>
+          <li>Automatic failover between edge nodes</li>
+          <li>Good fit for constrained sites with local aggregation</li>
+        </ul>
+        <p class="mode-footnote"><strong>Use cases:</strong> Manufacturing, smart buildings, retail POS, and surveillance.</p>
+      </article>
+
+      <article class="card mode-card">
+        <div class="mode-card__header">
+          <span class="mode-tag">Sidecar / Embedded Mode</span>
+          <span class="mode-card__badge">Best for low overhead</span>
+        </div>
+        <h3>Runs alongside your application or device</h3>
+        <p>Single-node, low-overhead deployment that keeps the broker close to the workload.</p>
+        <ul class="mode-list">
+          <li>Single-node and lightweight by design</li>
+          <li>Close to the workload for low latency</li>
+          <li>Simple to embed where the data is created</li>
+        </ul>
+        <p class="mode-footnote"><strong>Use cases:</strong> Smart appliances, telematics, connected vehicles, robotics, and heavy machinery.</p>
+      </article>
+    </div>
+
+    <div class="mode-spotlight card">
+      <div class="mode-spotlight__content">
+        <span class="mode-tag">Agentic Sidecar</span>
+        <h3>Agent Journal Pattern</h3>
+        <p>LeafCuttr can sit beside autonomous systems as an Agent Journal sidecar, preserving audit trails, decision evaluations, and asynchronous agent-to-agent communication.</p>
+      </div>
+      <div class="mode-spotlight__note">
+        <strong>Use when</strong>
+        <p>You need a structured sidecar around autonomous or agentic workflows.</p>
+      </div>
+    </div>
+
+    <div class="modes-actions cta-actions">
+      <a class="btn" href="/architecture/">See Architecture →</a>
+      <a class="btn-outline" href="/contact/">Contact →</a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+    </main>
+    <footer class="site-footer">
+  <div class="page-content footer-top">
+    <div class="footer-top-copy">
+      <p class="footer-eyebrow">Start here</p>
+      <h2>Build edge streaming that holds up in the field</h2>
+      <p>Leafcuttr keeps data local, resilient, and Kafka-compatible for the environments where cloud-first stacks fall apart.</p>
+    </div>
+    <div class="footer-top-actions">
+      <a class="btn" href="/contact/">Contact →</a>
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="page-content footer-grid">
+    <div class="footer-col footer-brand">
+      <a href="/" class="logo footer-logo" aria-label="Leafcuttr home">
+        <span class="brand-name">Leafcuttr</span>
+      </a>
+      <p>Edge-native streaming, simplified.</p>
+    </div>
+    <div class="footer-col footer-links">
+      <h3>Explore</h3>
+      <ul class="footer-link-list">
+        <li><a href="/features/">Features</a></li>
+        <li><a href="/modes/">Modes</a></li>
+        <li><a href="/architecture/">Architecture</a></li>
+        <li><a href="/benchmarks/">Benchmarks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-status">
+      <h3>Connect</h3>
+      <ul class="footer-link-list">
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="https://leafcuttr.github.io" target="_blank" rel="noopener noreferrer" data-no-active="true">Docs</a></li>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-content footer-bottom">
+    <p>© 2026 Leafcuttr. All rights reserved.</p>
+    <p class="footer-note">Leafcuttr for edge streaming.</p>
+  </div>
+</footer>
+
+  </body>
+</html>
