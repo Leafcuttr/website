@@ -25,7 +25,10 @@ description: "LeafCuttr delivers strong throughput, lower tail latency, and effi
       </article>
       <article class="card benchmark-snapshot-card">
         <span class="badge">Tail latency</span>
-        <div class="benchmark-snapshot__value">933</div>
+        <div class="benchmark-snapshot__value benchmark-snapshot__value--tail">
+          <span class="benchmark-snapshot__number">933</span>
+          <span class="benchmark-snapshot__unit">ms</span>
+        </div>
         <p>p999 for LeafCuttr on native sync mode in the supplementary comparison.</p>
       </article>
     </div>

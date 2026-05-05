@@ -6,7 +6,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
 
 <section class="hero">
   <h1>Edge-native streaming</h1>
-  <p class="tagline">Multi-protocol edge gateway built on top of Apache Kafka, with native support for HTTP and MQTT. Designed to run on constrained hardware and flaky networks.</p>
+  <p class="tagline">Leafcuttr is a multi-protocol edge gateway built on top of Apache Kafka, with native support for HTTP and MQTT. Designed to run on constrained hardware and flaky networks.</p>
 
   <div class="hero-actions">
     <a class="btn" href="https://docs.leafcuttr.io" target="_blank" rel="noopener noreferrer">Get Started →</a>
@@ -23,20 +23,9 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       allowfullscreen></iframe>
   </div>
 
-  <div class="hero-terminal" aria-label="LeafCuttr quick status">
-    <div class="hero-terminal__header">
-      <span class="hero-terminal__dot"></span>
-      <span class="hero-terminal__dot"></span>
-      <span class="hero-terminal__dot"></span>
-      <span class="hero-terminal__title">leafcuttr@edge:~</span>
-      <button class="hero-terminal__copy" type="button" aria-label="Copy Docker pull command" title="Copy">
-        <svg class="hero-terminal__copy-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M8 8.5V6.75C8 5.78 8.78 5 9.75 5h8.5C19.22 5 20 5.78 20 6.75v8.5c0 .97-.78 1.75-1.75 1.75H16.5V17.5c0 .97-.78 1.75-1.75 1.75h-8.5A1.75 1.75 0 0 1 4.5 17.5v-8.5c0-.97.78-1.75 1.75-1.75H8Zm1.5 0h6.75c.14 0 .25-.11.25-.25V6.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25v8.5c0 .14.11.25.25.25H9.5V8.5Zm5 2.25a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Zm-2 3a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Z"/>
-        </svg>
-        <span class="hero-terminal__copy-label">Copy</span>
-      </button>
-    </div>
-    <pre class="hero-terminal__body"><code>$ docker pull leafcuttr/leafcuttr:latest</code></pre>
+  <div class="hero-command" aria-label="Copy Docker pull command">
+    <code class="hero-command__code">$ docker pull leafcuttr/leafcuttr:latest</code>
+    <button class="hero-command__copy" type="button" aria-label="Copy Docker pull command" title="Copy">Copy</button>
   </div>
 </section>
 
@@ -46,19 +35,46 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
     <p class="section-lead">Modern data streaming tools weren’t built for the edge.</p>
     <div class="pain-grid">
       <article class="pain-card">
-        <h3>Constrained devices</h3>
+        <div class="pain-card__header">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <rect x="4" y="4" width="16" height="16" rx="3" ry="3"></rect>
+              <path d="M8 8h8M8 12h8M8 16h4"></path>
+            </svg>
+          </span>
+          <h3>Constrained devices</h3>
+        </div>
         <p>Devices are constrained by CPU, memory, and storage, so cloud-first stacks quickly become too heavy to run where the data starts.</p>
       </article>
       <article class="pain-card">
-        <h3>Unreliable networks</h3>
+        <div class="pain-card__header">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M5 12a11 11 0 0 1 14 0"></path>
+              <path d="M8 15a7 7 0 0 1 8 0"></path>
+              <path d="M11 18a3 3 0 0 1 2 0"></path>
+              <path d="M7 7l10 10"></path>
+            </svg>
+          </span>
+          <h3>Unreliable networks</h3>
+        </div>
         <p>Networks are intermittent, flaky, and often expensive to depend on for every message, every time.</p>
       </article>
       <article class="pain-card">
-        <h3>Too much data movement</h3>
+        <div class="pain-card__header">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 8h10"></path>
+              <path d="M10 5l4 3-4 3"></path>
+              <path d="M20 16H10"></path>
+              <path d="M14 13l-4 3 4 3"></path>
+            </svg>
+          </span>
+          <h3>Too much data movement</h3>
+        </div>
         <p>Bandwidth is expensive, data is high-volume but low signal, and teams are forced to push cloud-first architectures into environments where they do not fit.</p>
       </article>
     </div>
-    <p class="section-note">Distributed systems aren’t designed for the edge.</p>
   </div>
 </section>
 
@@ -188,16 +204,6 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       </article>
     </div>
 
-    <div class="how-terminal card" aria-label="Edge workflow summary">
-      <div class="how-terminal__header">
-        <span class="mode-tag">Edge summary</span>
-        <span class="how-terminal__title">leafcuttr workflow</span>
-      </div>
-      <pre class="how-terminal__body"><code>INPUT   → MQTT, HTTP, Kafka
-EDGE    → buffer, aggregate, filter
-UPSTREAM → forward when connectivity returns</code></pre>
-    </div>
-
     <div class="how-actions cta-actions">
       <a class="btn" href="{{ '/architecture/' | relative_url }}">See Architecture →</a>
       <a class="btn-outline" href="{{ '/contact/' | relative_url }}">Talk to us →</a>
@@ -251,27 +257,6 @@ UPSTREAM → forward when connectivity returns</code></pre>
         <h3>Robotics &amp; Heavy Machinery</h3>
         <p>Enable real-time decisions without depending on a cloud round trip for every event.</p>
       </article>
-    </div>
-  </div>
-</section>
-
-<section class="trust-strip">
-  <div class="section-shell">
-    <div class="trust-strip__inner">
-      <p class="trust-strip__eyebrow">Proof</p>
-      <div class="social-proof" aria-label="Leafcuttr trust and proof points">
-        <span class="proof-pill">Kafka 4.x compatible</span>
-        <span class="dot">•</span>
-        <span class="proof-pill">Full durability</span>
-        <span class="dot">•</span>
-        <span class="proof-pill">fsync</span>
-        <span class="dot">•</span>
-        <span class="proof-pill">Schema registry built in</span>
-        <span class="dot">•</span>
-        <span class="proof-pill">Benchmarks published</span>
-        <span class="dot">•</span>
-        <span class="proof-pill">Edge-native optimizations</span>
-      </div>
     </div>
   </div>
 </section>

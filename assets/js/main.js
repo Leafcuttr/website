@@ -48,28 +48,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const terminalCopyButton = document.querySelector('.hero-terminal__copy');
-  const terminalCode = document.querySelector('.hero-terminal__body code');
+  const terminalCopyButton = document.querySelector('.hero-command__copy');
+  const terminalCode = document.querySelector('.hero-command__code');
   if (terminalCopyButton && terminalCode) {
-    const copyLabel = terminalCopyButton.querySelector('.hero-terminal__copy-label');
-    const defaultLabel = copyLabel ? copyLabel.textContent : 'Copy';
+    const defaultLabel = terminalCopyButton.textContent || 'Copy';
     const copiedLabel = 'Copied';
     let copyResetTimer = null;
 
     const setCopiedState = () => {
       terminalCopyButton.classList.add('is-copied');
       terminalCopyButton.setAttribute('title', copiedLabel);
-      if (copyLabel) {
-        copyLabel.textContent = copiedLabel;
-      }
+      terminalCopyButton.textContent = copiedLabel;
 
       window.clearTimeout(copyResetTimer);
       copyResetTimer = window.setTimeout(() => {
         terminalCopyButton.classList.remove('is-copied');
         terminalCopyButton.setAttribute('title', defaultLabel);
-        if (copyLabel) {
-          copyLabel.textContent = defaultLabel;
-        }
+        terminalCopyButton.textContent = defaultLabel;
       }, 1800);
     };
 
