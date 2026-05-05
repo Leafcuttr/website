@@ -1058,8 +1058,38 @@
   background: linear-gradient(180deg, rgba(17, 17, 17, 0.92), rgba(10, 10, 10, 0.98));
 }
 
+.solution-section {
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.92), rgba(10, 10, 10, 0.98));
+}
+
 .problem-strip h2 {
   max-width: 16ch;
+}
+
+.solution-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 18ch;
+}
+
+.solution-heading__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.95rem;
+  background: rgba($accent, 0.1);
+  color: $accent;
+  flex: 0 0 auto;
+}
+
+.solution-heading__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba($accent2, 0.25));
 }
 
 .pain-grid {
@@ -1098,6 +1128,38 @@
 }
 
 .pain-card__header h3 {
+  margin-top: 0;
+}
+
+.solution-item__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.solution-item__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.9rem;
+  background: rgba($accent, 0.1);
+  color: $accent;
+  flex: 0 0 auto;
+}
+
+.solution-item__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.solution-item__header h3 {
   margin-top: 0;
 }
 
@@ -1385,14 +1447,12 @@
   border-color: $accent;
 }
 
-.use-case-card:hover {
-  transform: translateY(-2px);
+.solution-item:hover {
+  border-color: $accent;
 }
 
-.solution-icon,
-.use-case-icon {
-  font-size: 2rem;
-  line-height: 1;
+.use-case-card:hover {
+  transform: translateY(-2px);
 }
 
 .stat-item {

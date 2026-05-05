@@ -65,19 +65,42 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
   </div>
 </section>
 
-<section class="section solution-section">
+<section class="solution-section">
   <div class="section-shell">
-    <h2 style="display: flex; align-items: center; gap: 0px;">Meet Leafcuttr <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48"></h2>
-    <p class="section-lead">An Apache Kafka ® compatible event broker built for high velocity data over flaky networks &amp; constrained devices.</p>
+    <h2 class="solution-heading">
+      <span class="solution-heading__icon" aria-hidden="true">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48">
+      </span>
+      <span>Meet Leafcuttr</span>
+    </h2>
+    <p class="section-lead">An Apache Kafka compatible event broker built for high-velocity data over flaky networks and constrained devices.</p>
     <div class="solution-row">
       <article class="solution-item">
-        <p><strong>Kafka-compatible.</strong> Integrate without changing your existing ecosystem.</p>
+        <div class="solution-item__header">
+          <span class="solution-item__icon" aria-hidden="true">
+            <i data-lucide="plug-2"></i>
+          </span>
+          <h3>Kafka-compatible</h3>
+        </div>
+        <p>Integrate without changing your existing ecosystem.</p>
       </article>
       <article class="solution-item">
-        <p><strong>Runs close to the data.</strong> Leafcuttr sits at the edge, where buffering, aggregation, and forwarding can happen efficiently even when conditions are unreliable.</p>
+        <div class="solution-item__header">
+          <span class="solution-item__icon" aria-hidden="true">
+            <i data-lucide="route"></i>
+          </span>
+          <h3>Runs close to the data</h3>
+        </div>
+        <p>Leafcuttr sits at the edge, where buffering, aggregation, and forwarding can happen efficiently even when conditions are unreliable.</p>
       </article>
       <article class="solution-item">
-        <p><strong>Buffer → Aggregate → Forward.</strong> Keep data local, shape it intelligently, and forward only what matters upstream.</p>
+        <div class="solution-item__header">
+          <span class="solution-item__icon" aria-hidden="true">
+            <i data-lucide="layers-3"></i>
+          </span>
+          <h3>Buffer, aggregate, forward</h3>
+        </div>
+        <p>Keep data local, shape it intelligently, and forward only what matters upstream.</p>
       </article>
     </div>
   </div>
