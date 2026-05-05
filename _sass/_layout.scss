@@ -860,6 +860,23 @@
   gap: 1.25rem;
 }
 
+.hero-video {
+  width: min(100%, 960px);
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba($accent, 0.22);
+  border-radius: calc($radius * 1.5);
+  background: linear-gradient(180deg, rgba($surface, 0.96), rgba($bg, 0.98));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.hero-video__frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 @media (max-width: 900px) {
   .feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -892,6 +909,10 @@
 @media (max-width: 640px) {
   .section-shell {
     padding: 0 1.25rem;
+  }
+
+  .hero-video {
+    width: 100%;
   }
 
   .feature-grid {
@@ -989,11 +1010,54 @@
 }
 
 .hero-terminal__title {
-  margin-left: auto;
   color: $muted;
   font-family: $font-mono;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
+}
+
+.hero-terminal__copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid rgba($border, 0.85);
+  border-radius: 999px;
+  background: rgba($bg, 0.55);
+  color: $muted;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+
+.hero-terminal__copy:hover,
+.hero-terminal__copy:focus-visible {
+  border-color: rgba($accent, 0.7);
+  color: $text;
+  background: rgba($accent, 0.08);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.hero-terminal__copy:focus-visible {
+  box-shadow: 0 0 0 3px rgba($accent, 0.18);
+}
+
+.hero-terminal__copy-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.hero-terminal__copy.is-copied {
+  border-color: rgba($accent2, 0.85);
+  color: $accent2;
+  background: rgba($accent2, 0.1);
 }
 
 .hero-terminal__body {
@@ -1012,18 +1076,6 @@
   color: inherit;
   padding: 0;
   display: block;
-}
-
-.hero-terminal__body code.is-typing {
-  border-right: 2px solid $accent2;
-  padding-right: 0.2rem;
-  animation: terminal-caret 0.9s steps(1) infinite;
-}
-
-@keyframes terminal-caret {
-  50% {
-    border-right-color: transparent;
-  }
 }
 
 .section,

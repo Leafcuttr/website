@@ -48,40 +48,65 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const terminalCopyButton = document.querySelector('.hero-terminal__copy');
   const terminalCode = document.querySelector('.hero-terminal__body code');
-  if (terminalCode) {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const fullText = terminalCode.textContent;
+  if (terminalCopyButton && terminalCode) {
+    const copyLabel = terminalCopyButton.querySelector('.hero-terminal__copy-label');
+    const defaultLabel = copyLabel ? copyLabel.textContent : 'Copy';
+    const copiedLabel = 'Copied';
+    let copyResetTimer = null;
 
-    if (prefersReducedMotion) {
-      terminalCode.textContent = fullText;
-    } else {
-      const typingDurationMs = 10000;
-      const pauseDurationMs = 30000;
-      const charDelayMs = Math.max(18, Math.min(160, Math.round(typingDurationMs / Math.max(fullText.length, 1))));
+    const setCopiedState = () => {
+      terminalCopyButton.classList.add('is-copied');
+      terminalCopyButton.setAttribute('title', copiedLabel);
+      if (copyLabel) {
+        copyLabel.textContent = copiedLabel;
+      }
 
-      const runCycle = () => {
-        terminalCode.textContent = '';
-        terminalCode.classList.add('is-typing');
+      window.clearTimeout(copyResetTimer);
+      copyResetTimer = window.setTimeout(() => {
+        terminalCopyButton.classList.remove('is-copied');
+        terminalCopyButton.setAttribute('title', defaultLabel);
+        if (copyLabel) {
+          copyLabel.textContent = defaultLabel;
+        }
+      }, 1800);
+    };
 
-        let index = 0;
-        const typeNext = () => {
-          terminalCode.textContent = fullText.slice(0, index);
-          if (index < fullText.length) {
-            index += 1;
-            window.setTimeout(typeNext, charDelayMs);
-          } else {
-            terminalCode.classList.remove('is-typing');
-            window.setTimeout(runCycle, pauseDurationMs);
+    const copyText = async () => {
+      const text = terminalCode.textContent.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const selection = window.getSelection();
+          const range = document.createRange();
+          range.selectNodeContents(terminalCode);
+          if (!selection) {
+            throw new Error('Clipboard selection unavailable');
           }
-        };
 
-        window.setTimeout(typeNext, 300);
-      };
+          selection.removeAllRanges();
+          selection.addRange(range);
+          const copied = document.execCommand('copy');
+          selection.removeAllRanges();
 
-      window.setTimeout(runCycle, 300);
-    }
+          if (!copied) {
+            throw new Error('Clipboard copy failed');
+          }
+        }
+
+        setCopiedState();
+      } catch (error) {
+        terminalCopyButton.setAttribute('aria-label', 'Copy failed');
+        terminalCopyButton.setAttribute('title', 'Copy failed');
+      }
+    };
+
+    terminalCopyButton.addEventListener('click', copyText);
   }
+
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav-list');
   

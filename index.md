@@ -1,25 +1,26 @@
 ---
 layout: default
 title: Leafcuttr
-description: "Leafcuttr is a Kafka-compatible edge streaming broker designed for constrained devices, flaky networks, and high-volume edge data."
+description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache Kafka, with native support for HTTP and MQTT. Designed to run on constrained hardware and flaky networks."
 ---
 
 <section class="hero">
-  <h1>Edge-native streaming for the real world</h1>
-  <p class="tagline">Kafka-compatible. Lightweight. Built for flaky networks, constrained devices, and high-volume edge data.</p>
-  <div class="hero-strip" aria-label="Key capabilities">
-    <span>Lightweight</span>
-    <span>•</span>
-    <span>Resilient</span>
-    <span>•</span>
-    <span>Kafka-Compatible</span>
-    <span>•</span>
-    <span>Edge-Optimized</span>
-  </div>
+  <h1>Edge-native streaming</h1>
+  <p class="tagline">Multi-protocol edge gateway built on top of Apache Kafka, with native support for HTTP and MQTT. Designed to run on constrained hardware and flaky networks.</p>
 
   <div class="hero-actions">
-    <a class="btn" href="{{ '/contact/' | relative_url }}">Get Started →</a>
+    <a class="btn" href="https://docs.leafcuttr.io" target="_blank" rel="noopener noreferrer">Get Started →</a>
     <a class="btn-outline" href="{{ '/benchmarks/' | relative_url }}">View Benchmarks →</a>
+  </div>
+
+  <div class="hero-video" aria-label="LeafCuttr intro video">
+    <iframe
+      class="hero-video__frame"
+      src="https://www.youtube.com/embed/WLDzqP0Eob0?start=11&rel=0"
+      title="LeafCuttr intro video"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
   </div>
 
   <div class="hero-terminal" aria-label="LeafCuttr quick status">
@@ -28,6 +29,12 @@ description: "Leafcuttr is a Kafka-compatible edge streaming broker designed for
       <span class="hero-terminal__dot"></span>
       <span class="hero-terminal__dot"></span>
       <span class="hero-terminal__title">leafcuttr@edge:~</span>
+      <button class="hero-terminal__copy" type="button" aria-label="Copy Docker pull command" title="Copy">
+        <svg class="hero-terminal__copy-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M8 8.5V6.75C8 5.78 8.78 5 9.75 5h8.5C19.22 5 20 5.78 20 6.75v8.5c0 .97-.78 1.75-1.75 1.75H16.5V17.5c0 .97-.78 1.75-1.75 1.75h-8.5A1.75 1.75 0 0 1 4.5 17.5v-8.5c0-.97.78-1.75 1.75-1.75H8Zm1.5 0h6.75c.14 0 .25-.11.25-.25V6.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25v8.5c0 .14.11.25.25.25H9.5V8.5Zm5 2.25a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Zm-2 3a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Z"/>
+        </svg>
+        <span class="hero-terminal__copy-label">Copy</span>
+      </button>
     </div>
     <pre class="hero-terminal__body"><code>$ docker pull leafcuttr/leafcuttr:latest</code></pre>
   </div>
@@ -51,14 +58,14 @@ description: "Leafcuttr is a Kafka-compatible edge streaming broker designed for
         <p>Bandwidth is expensive, data is high-volume but low signal, and teams are forced to push cloud-first architectures into environments where they do not fit.</p>
       </article>
     </div>
-    <p class="section-note">Existing systems are too heavy and complex, and they fail when the edge stops behaving like a data center.</p>
+    <p class="section-note">Distributed systems aren’t designed for the edge.</p>
   </div>
 </section>
 
 <section class="section solution-section">
   <div class="section-shell">
     <h2 style="display: flex; align-items: center; gap: 0px;">Meet LeafCuttr <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48"></h2>
-    <p class="section-lead">LeafCuttr is a lightweight, Kafka-compatible streaming platform built specifically for edge environments.</p>
+    <p class="section-lead">An Apache Kafka ® compatible event broker built for high velocity data over flaky networks &amp; constrained devices.</p>
     <div class="solution-row">
       <article class="solution-item">
         <p><strong>Kafka-compatible.</strong> Integrate without changing your existing ecosystem.</p>
