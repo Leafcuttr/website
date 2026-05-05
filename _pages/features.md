@@ -1,7 +1,7 @@
 ---
 title: Features
 permalink: /features/
-description: "LeafCuttr delivers Kafka compatibility, multi-protocol ingestion, resilience, schema registry, observability, and async replication for edge teams."
+description: "Leafcuttr delivers Kafka compatibility, multi-protocol ingestion, resilience, schema registry, observability, and async replication for edge teams."
 ---
 
 <section class="section features-page">
@@ -9,7 +9,7 @@ description: "LeafCuttr delivers Kafka compatibility, multi-protocol ingestion, 
     <div class="features-page-hero">
       <p class="features-page-eyebrow">Capabilities</p>
       <h2>Everything you need at the edge, without the usual overhead</h2>
-      <p class="section-lead">LeafCuttr groups the features that matter most during evaluation: how it connects, how it survives, and how it stays observable when conditions get messy.</p>
+      <p class="section-lead">Leafcuttr groups the features that matter most during evaluation: how it connects, how it survives, and how it stays observable when conditions get messy.</p>
     </div>
 
     <div class="features-story">
@@ -26,7 +26,7 @@ description: "LeafCuttr delivers Kafka compatibility, multi-protocol ingestion, 
       <article class="card feature-story-card">
         <span class="badge">Run</span>
         <h3>Lightweight &amp; Efficient</h3>
-        <p>LeafCuttr runs on constrained devices with low CPU and memory usage.</p>
+        <p>Leafcuttr runs on constrained devices with low CPU and memory usage.</p>
       </article>
       <article class="card feature-story-card">
         <span class="badge">Run</span>

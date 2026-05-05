@@ -1,7 +1,7 @@
 ---
 title: Deployment Modes
 permalink: /modes/
-description: "LeafCuttr deploys in gateway or sidecar modes depending on whether the edge needs fan-in, local resilience, or embedded operation."
+description: "Leafcuttr deploys in gateway or sidecar modes depending on whether the edge needs fan-in, local resilience, or embedded operation."
 ---
 
 <section class="section modes-section">
@@ -9,7 +9,7 @@ description: "LeafCuttr deploys in gateway or sidecar modes depending on whether
     <div class="modes-hero">
       <p class="modes-eyebrow">Deployment</p>
       <h2>Choose the shape that fits the edge</h2>
-      <p class="section-lead">LeafCuttr can run as a shared edge gateway, a sidecar beside your workload, or an agent journal layer for autonomous systems.</p>
+      <p class="section-lead">Leafcuttr can run as a shared edge gateway, a sidecar beside your workload, or an agent journal layer for autonomous systems.</p>
     </div>
 
     <div class="modes-grid">
@@ -48,7 +48,7 @@ description: "LeafCuttr deploys in gateway or sidecar modes depending on whether
       <div class="mode-spotlight__content">
         <span class="mode-tag">Agentic Sidecar</span>
         <h3>Agent Journal Pattern</h3>
-        <p>LeafCuttr can sit beside autonomous systems as an Agent Journal sidecar, preserving audit trails, decision evaluations, and asynchronous agent-to-agent communication.</p>
+        <p>Leafcuttr can sit beside autonomous systems as an Agent Journal sidecar, preserving audit trails, decision evaluations, and asynchronous agent-to-agent communication.</p>
       </div>
       <div class="mode-spotlight__note">
         <strong>Use when</strong>

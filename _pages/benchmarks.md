@@ -1,7 +1,7 @@
 ---
 title: Benchmarks
 permalink: /benchmarks/
-description: "LeafCuttr delivers strong throughput, lower tail latency, and efficient operation on constrained hardware."
+description: "Leafcuttr delivers strong throughput, lower tail latency, and efficient operation on constrained hardware."
 ---
 
 <section class="section benchmarks-page">
@@ -9,7 +9,7 @@ description: "LeafCuttr delivers strong throughput, lower tail latency, and effi
     <div class="benchmarks-hero">
       <p class="benchmarks-eyebrow">Proof</p>
       <h2>Performance that fits the edge</h2>
-      <p class="section-lead">LeafCuttr is tuned for constrained environments, from tmpfs throughput to fsync-heavy workloads where durability still matters.</p>
+      <p class="section-lead">Leafcuttr is tuned for constrained environments, from tmpfs throughput to fsync-heavy workloads where durability still matters.</p>
     </div>
 
     <div class="benchmarks-snapshot">
@@ -29,14 +29,14 @@ description: "LeafCuttr delivers strong throughput, lower tail latency, and effi
           <span class="benchmark-snapshot__number">933</span>
           <span class="benchmark-snapshot__unit">ms</span>
         </div>
-        <p>p999 for LeafCuttr on native sync mode in the supplementary comparison.</p>
+        <p>p999 for Leafcuttr on native sync mode in the supplementary comparison.</p>
       </article>
     </div>
 
     <div class="benchmarks-section">
       <div class="benchmarks-section__header">
         <h3>Throughput comparison</h3>
-        <p>Higher bars indicate stronger write throughput. LeafCuttr is shown alongside Apache Kafka across tmpfs and fsync scenarios.</p>
+        <p>Higher bars indicate stronger write throughput. Leafcuttr is shown alongside Apache Kafka across tmpfs and fsync scenarios.</p>
       </div>
       <div class="bar-chart benchmark-chart" aria-label="Throughput comparison">
         {% for item in site.data.benchmarks.throughput %}
@@ -86,7 +86,7 @@ description: "LeafCuttr delivers strong throughput, lower tail latency, and effi
 
     <div class="benchmarks-note card">
       <h3>What this means</h3>
-      <p>LeafCuttr is designed to outperform traditional Kafka in edge scenarios with better throughput, lower tail latency, and durability that still fits constrained hardware.</p>
+      <p>Leafcuttr is designed to outperform traditional Kafka in edge scenarios with better throughput, lower tail latency, and durability that still fits constrained hardware.</p>
     </div>
 
     <div class="benchmarks-actions cta-actions">

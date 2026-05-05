@@ -1,17 +1,17 @@
 throughput:
-  - label: "Untuned Producer - LC (tmpfs)"
+  - label: "Untuned Producer - Leafcuttr (tmpfs)"
     value: 87.64
     type: lc
   - label: "Untuned Producer - AK (tmpfs)"
     value: 72.1
     type: ak
-  - label: "Tuned Producer - LC (fsync)"
+  - label: "Tuned Producer - Leafcuttr (fsync)"
     value: 32.53
     type: lc
   - label: "Tuned Producer - AK (fsync)"
     value: 23.21
     type: ak
-  - label: "Untuned Producer - LC (fsync)"
+  - label: "Untuned Producer - Leafcuttr (fsync)"
     value: 3.55
     type: lc
   - label: "Untuned Producer - AK (fsync)"
@@ -48,19 +48,19 @@ supplementary:
     max_lat: 6752
     p50: 3644
     p999: 6741
-  - label: "LC Mod Native no flush"
+  - label: "Leafcuttr Mod Native no flush"
     tp: 65.59
     avg_lat: 468
     max_lat: 944
     p50: 453
     p999: 933
-  - label: "LC Mod Native flush interval 1"
+  - label: "Leafcuttr Mod Native flush interval 1"
     tp: 9.48
     avg_lat: 3228
     max_lat: 5158
     p50: 3139
     p999: 5148
-  - label: "LC Mod Native Sync Mode ✦"
+  - label: "Leafcuttr Mod Native Sync Mode ✦"
     tp: 12.67
     avg_lat: 2413
     max_lat: 3769

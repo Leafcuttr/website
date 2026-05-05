@@ -1,6 +1,6 @@
 title: Leafcuttr
 tagline: "Edge-native streaming"
-description: "LeafCuttr is a multi-protocol edge gateway built on top of Apache Kafka, with native support for HTTP and MQTT. Designed to run on constrained hardware and flaky networks."
+description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache Kafka, with native support for HTTP and MQTT. Designed to run on constrained hardware and flaky networks."
 og_image: "/assets/images/og-image.svg"
 og_type: "website"
 twitter_card: "summary_large_image"

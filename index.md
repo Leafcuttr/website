@@ -13,11 +13,11 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
     <a class="btn-outline" href="{{ '/benchmarks/' | relative_url }}">View Benchmarks →</a>
   </div>
 
-  <div class="hero-video" aria-label="LeafCuttr intro video">
+  <div class="hero-video" aria-label="Leafcuttr intro video">
     <iframe
       class="hero-video__frame"
       src="https://www.youtube.com/embed/WLDzqP0Eob0?start=11&rel=0"
-      title="LeafCuttr intro video"
+      title="Leafcuttr intro video"
       loading="lazy"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
@@ -37,10 +37,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       <article class="pain-card">
         <div class="pain-card__header">
           <span class="pain-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <rect x="4" y="4" width="16" height="16" rx="3" ry="3"></rect>
-              <path d="M8 8h8M8 12h8M8 16h4"></path>
-            </svg>
+            <i data-lucide="hard-drive"></i>
           </span>
           <h3>Constrained devices</h3>
         </div>
@@ -49,12 +46,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       <article class="pain-card">
         <div class="pain-card__header">
           <span class="pain-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M5 12a11 11 0 0 1 14 0"></path>
-              <path d="M8 15a7 7 0 0 1 8 0"></path>
-              <path d="M11 18a3 3 0 0 1 2 0"></path>
-              <path d="M7 7l10 10"></path>
-            </svg>
+            <i data-lucide="wifi-off"></i>
           </span>
           <h3>Unreliable networks</h3>
         </div>
@@ -63,12 +55,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       <article class="pain-card">
         <div class="pain-card__header">
           <span class="pain-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M4 8h10"></path>
-              <path d="M10 5l4 3-4 3"></path>
-              <path d="M20 16H10"></path>
-              <path d="M14 13l-4 3 4 3"></path>
-            </svg>
+            <i data-lucide="arrow-left-right"></i>
           </span>
           <h3>Too much data movement</h3>
         </div>
@@ -80,14 +67,14 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
 
 <section class="section solution-section">
   <div class="section-shell">
-    <h2 style="display: flex; align-items: center; gap: 0px;">Meet LeafCuttr <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48"></h2>
+    <h2 style="display: flex; align-items: center; gap: 0px;">Meet Leafcuttr <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" height="48"></h2>
     <p class="section-lead">An Apache Kafka ® compatible event broker built for high velocity data over flaky networks &amp; constrained devices.</p>
     <div class="solution-row">
       <article class="solution-item">
         <p><strong>Kafka-compatible.</strong> Integrate without changing your existing ecosystem.</p>
       </article>
       <article class="solution-item">
-        <p><strong>Runs close to the data.</strong> LeafCuttr sits at the edge, where buffering, aggregation, and forwarding can happen efficiently even when conditions are unreliable.</p>
+        <p><strong>Runs close to the data.</strong> Leafcuttr sits at the edge, where buffering, aggregation, and forwarding can happen efficiently even when conditions are unreliable.</p>
       </article>
       <article class="solution-item">
         <p><strong>Buffer → Aggregate → Forward.</strong> Keep data local, shape it intelligently, and forward only what matters upstream.</p>
@@ -99,19 +86,19 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
 <section class="section benchmark-teaser">
   <div class="section-shell">
     <h2>Performance That Matters</h2>
-    <p class="section-lead">LeafCuttr is optimized for constrained environments.</p>
+    <p class="section-lead">Leafcuttr is optimized for constrained environments.</p>
     <div class="stats-strip">
       <article class="stat-item">
-        <div class="stat-value">80%</div>
+        <div class="stat-value">82%</div>
         <div class="stat-label">Higher throughput</div>
       </article>
       <article class="stat-item">
-        <div class="stat-value">40%</div>
+        <div class="stat-value">39%</div>
         <div class="stat-label">Lower latency</div>
       </article>
       <article class="stat-item">
-        <div class="stat-value">&lt;0.5</div>
-        <div class="stat-label">CPU / 1GB RAM</div>
+        <div class="stat-value">95%</div>
+        <div class="stat-label">Cheaper than running traditional Kafka brokers</div>
       </article>
     </div>
     <div class="benchmark-link-row">
@@ -125,36 +112,36 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
   <div class="section-shell features-shell">
     <div class="features-header">
       <h2>Built for Edge Streaming</h2>
-      <p class="section-lead">LeafCuttr delivers Kafka compatibility, multi-protocol ingestion, resilience, schema registry, observability, and async replication for edge teams.</p>
+      <p class="section-lead">Leafcuttr delivers Kafka compatibility, multi-protocol ingestion, resilience, schema registry, observability, and async replication for edge teams.</p>
     </div>
     <div class="feature-grid" aria-label="Leafcuttr platform features">
       <article class="feature-card">
-        <div class="feature-card__mark">✓</div>
+        <div class="feature-card__mark" aria-hidden="true"><i data-lucide="plug-2"></i></div>
         <h3>Kafka-Compatible</h3>
         <p>Fully compatible with the Kafka protocol so teams can integrate without reworking their existing ecosystem.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-card__mark">✓</div>
+        <div class="feature-card__mark" aria-hidden="true"><i data-lucide="blocks"></i></div>
         <h3>Multi-Protocol Gateway</h3>
         <p>Native support for MQTT, HTTP, and Kafka, with no need for proxies or additional layers.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-card__mark">✓</div>
+        <div class="feature-card__mark" aria-hidden="true"><i data-lucide="zap"></i></div>
         <h3>Lightweight &amp; Efficient</h3>
         <p>Runs on constrained devices with low CPU and memory usage.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-card__mark">✓</div>
+        <div class="feature-card__mark" aria-hidden="true"><i data-lucide="shield-check"></i></div>
         <h3>Resilient by Design</h3>
         <p>Handles flaky networks and intermittent connectivity without collapsing the local pipeline.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-card__mark">✓</div>
+        <div class="feature-card__mark" aria-hidden="true"><i data-lucide="database"></i></div>
         <h3>Built-in Schema Registry</h3>
         <p>No external service required to keep schemas aligned as message formats evolve.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-card__mark">✓</div>
+        <div class="feature-card__mark" aria-hidden="true"><i data-lucide="bar-chart-3"></i></div>
         <h3>Observability Included</h3>
         <p>Metrics and monitoring are part of the product, not something you bolt on later.</p>
       </article>
@@ -168,14 +155,14 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
     <div class="how-hero">
       <p class="how-eyebrow">Workflow</p>
       <h2>Streaming, reimagined for the edge</h2>
-      <p class="section-lead">LeafCuttr keeps data close to the source, survives bad networks, and forwards only the signals that matter upstream.</p>
+      <p class="section-lead">Leafcuttr keeps data close to the source, survives bad networks, and forwards only the signals that matter upstream.</p>
     </div>
 
     <div class="how-steps">
       <article class="card how-step">
         <div class="how-step__index">01</div>
         <h3>Runs as a lightweight broker</h3>
-        <p>LeafCuttr runs on edge devices or gateways close to where data is generated.</p>
+        <p>Leafcuttr runs on edge devices or gateways close to where data is generated.</p>
       </article>
       <article class="card how-step">
         <div class="how-step__index">02</div>
@@ -185,7 +172,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       <article class="card how-step">
         <div class="how-step__index">03</div>
         <h3>Buffers during interruptions</h3>
-        <p>When networks fail, LeafCuttr keeps buffering locally instead of dropping the flow.</p>
+        <p>When networks fail, Leafcuttr keeps buffering locally instead of dropping the flow.</p>
       </article>
       <article class="card how-step">
         <div class="how-step__index">04</div>
@@ -195,7 +182,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       <article class="card how-step">
         <div class="how-step__index">05</div>
         <h3>Forwards when ready</h3>
-        <p>LeafCuttr forwards to central cloud systems when connectivity returns and capacity allows.</p>
+        <p>Leafcuttr forwards to central cloud systems when connectivity returns and capacity allows.</p>
       </article>
       <article class="card how-step how-step--aside">
         <div class="how-step__index">06</div>
@@ -264,7 +251,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
 <section class="cta-section">
   <div class="section-shell">
     <h2>Build With Us</h2>
-    <p>We’re collaborating with early adopters to refine LeafCuttr for real-world use cases.</p>
+    <p>We’re collaborating with early adopters to refine Leafcuttr for real-world use cases.</p>
     <div class="cta-actions">
       <a class="btn" href="{{ '/contact/' | relative_url }}">Get in touch →</a>
       <a class="cta-link" href="{{ '/benchmarks/' | relative_url }}">View Benchmarks →</a>

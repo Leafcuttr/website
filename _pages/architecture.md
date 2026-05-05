@@ -1,7 +1,7 @@
 ---
 title: Architecture
 permalink: /architecture/
-description: "LeafCuttr separates management, control, and data planes so edge streaming stays fast while fleet operations stay coordinated."
+description: "Leafcuttr separates management, control, and data planes so edge streaming stays fast while fleet operations stay coordinated."
 ---
 
 <section class="section architecture-section">
@@ -48,11 +48,11 @@ description: "LeafCuttr separates management, control, and data planes so edge s
       </article>
       <article class="card architecture-card">
         <h3>Control Plane</h3>
-        <p>The LeafCuttr Controller communicates with Leaf Monitor on each edge host over HTTP and WebSocket for bootstrap, configuration, change management, and metrics.</p>
+        <p>The Leafcuttr Controller communicates with Leaf Monitor on each edge host over HTTP and WebSocket for bootstrap, configuration, change management, and metrics.</p>
       </article>
       <article class="card architecture-card">
         <h3>Data Plane</h3>
-        <p>The LeafCuttr Server accepts Kafka, MQTT, and HTTP traffic at the edge, then replicates asynchronously to the mothership when connectivity is available.</p>
+        <p>The Leafcuttr Server accepts Kafka, MQTT, and HTTP traffic at the edge, then replicates asynchronously to the mothership when connectivity is available.</p>
       </article>
     </div>
 
