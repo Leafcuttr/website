@@ -24,7 +24,7 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
   </div>
 
   <div class="hero-command" aria-label="Copy Docker pull command">
-    <code class="hero-command__code">$ docker pull leafcuttr/leafcuttr:latest</code>
+    <code class="hero-command__code">$ docker pull leafcuttr/edge-server:latest</code>
     <button class="hero-command__copy" type="button" aria-label="Copy Docker pull command" title="Copy">Copy</button>
   </div>
 </section>
