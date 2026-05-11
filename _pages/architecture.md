@@ -12,46 +12,46 @@ description: "Leafcuttr separates management, control, and data planes so edge s
       <p class="section-lead">Leafcuttr splits management, control, and data planes so edge workloads stay lean, operators stay in control, and data movement stays intentional.</p>
     </div>
 
-    <div class="architecture-diagram card" aria-label="Leafcuttr architecture overview">
-      <div class="architecture-diagram__row">
-        <span class="architecture-diagram__label">Management</span>
-        <div class="architecture-diagram__body">
-          <strong>Console, Kubernetes Operator, API</strong>
-          <span>Fleet provisioning, lifecycle actions, and configuration changes happen here.</span>
-        </div>
-        <span class="architecture-diagram__note">Coordinates the fleet</span>
-      </div>
-      <div class="architecture-diagram__connector" aria-hidden="true"></div>
-      <div class="architecture-diagram__row">
-        <span class="architecture-diagram__label">Control</span>
-        <div class="architecture-diagram__body">
-          <strong>Leafcuttr Controller + Leaf Monitor</strong>
-          <span>Bootstrap, change management, and metrics flow over HTTP and WebSocket.</span>
-        </div>
-        <span class="architecture-diagram__note">Keeps the edge in sync</span>
-      </div>
-      <div class="architecture-diagram__connector" aria-hidden="true"></div>
-      <div class="architecture-diagram__row">
-        <span class="architecture-diagram__label">Data</span>
-        <div class="architecture-diagram__body">
-          <strong>Leafcuttr Server</strong>
-          <span>Kafka, MQTT, and HTTP traffic stays local first, then replicates asynchronously when connectivity allows.</span>
-        </div>
-        <span class="architecture-diagram__note">Streams at the edge</span>
-      </div>
-    </div>
+    <figure class="architecture-diagram card" aria-label="Leafcuttr architecture overview">
+      <img
+        class="architecture-diagram__img"
+        src="{{ '/assets/images/architecture-img1.jpeg' | relative_url }}"
+        alt="Leafcuttr deployment architecture showing Embedded Mode (Leafcuttr inside the device) and Gateway Mode (Leafcuttr on a dedicated gateway device), both connecting edge devices via Kafka, MQTT, and HTTP to a Mothership Cluster."
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption class="architecture-diagram__caption">
+        <span class="architecture-diagram__caption-badge">Embedded Mode</span> — Leafcuttr runs inside each device.&ensp;
+        <span class="architecture-diagram__caption-badge architecture-diagram__caption-badge--alt">Gateway Mode</span> — Leafcuttr runs on a dedicated gateway, aggregating data from surrounding devices.
+      </figcaption>
+    </figure>
 
     <div class="architecture-grid">
       <article class="card architecture-card">
-        <h3>Management Plane</h3>
+        <div class="architecture-card__header">
+          <span class="architecture-card__icon" aria-hidden="true">
+            <i data-lucide="layers"></i>
+          </span>
+          <h3>Management Plane</h3>
+        </div>
         <p>The Console, Kubernetes Operator, and API coordinate fleet-level provisioning and lifecycle management without touching the data path.</p>
       </article>
       <article class="card architecture-card">
-        <h3>Control Plane</h3>
+        <div class="architecture-card__header">
+          <span class="architecture-card__icon" aria-hidden="true">
+            <i data-lucide="radio"></i>
+          </span>
+          <h3>Control Plane</h3>
+        </div>
         <p>The Leafcuttr Controller communicates with Leaf Monitor on each edge host over HTTP and WebSocket for bootstrap, configuration, change management, and metrics.</p>
       </article>
       <article class="card architecture-card">
-        <h3>Data Plane</h3>
+        <div class="architecture-card__header">
+          <span class="architecture-card__icon" aria-hidden="true">
+            <i data-lucide="database"></i>
+          </span>
+          <h3>Data Plane</h3>
+        </div>
         <p>The Leafcuttr Server accepts Kafka, MQTT, and HTTP traffic at the edge, then replicates asynchronously to the mothership when connectivity is available.</p>
       </article>
     </div>

@@ -547,59 +547,56 @@
 }
 
 .architecture-diagram {
-  display: grid;
-  gap: 1rem;
-  padding: 2rem;
+  padding: 1.75rem;
   background:
     radial-gradient(circle at top left, rgba($accent, 0.08), transparent 35%),
     linear-gradient(180deg, rgba($surface, 0.98), rgba($bg, 0.96));
-}
-
-.architecture-diagram__row {
-  display: grid;
-  grid-template-columns: 110px minmax(0, 1fr) 180px;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  align-items: center;
+  margin: 0;
 }
 
-.architecture-diagram__label {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
+.architecture-diagram__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc($radius * 1.25);
+  border: 1px solid rgba($accent, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.38);
+  }
+}
+
+.architecture-diagram__caption {
+  font-size: 0.875rem;
+  color: $muted;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.architecture-diagram__caption-badge {
+  display: inline-block;
+  padding: 0.15em 0.6em;
   border-radius: 999px;
-  border: 1px solid rgba($accent, 0.35);
+  background: rgba($accent, 0.15);
+  border: 1px solid rgba($accent, 0.3);
   color: $accent;
   font-family: $font-mono;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: rgba($accent, 0.07);
+  vertical-align: middle;
 }
 
-.architecture-diagram__body {
-  display: grid;
-  gap: 0.35rem;
-}
-
-.architecture-diagram__body strong {
-  color: $text;
-  font-size: 1.1rem;
-}
-
-.architecture-diagram__body span,
-.architecture-diagram__note {
-  color: $muted;
-}
-
-.architecture-diagram__note {
-  text-align: right;
-  font-size: 0.875rem;
-}
-
-.architecture-diagram__connector {
-  height: 1px;
-  background: linear-gradient(to right, transparent, rgba($accent, 0.35), transparent);
+.architecture-diagram__caption-badge--alt {
+  background: rgba(#7c6af7, 0.12);
+  border-color: rgba(#7c6af7, 0.3);
+  color: #a99fff;
 }
 
 .architecture-grid {
@@ -610,6 +607,41 @@
 
 .architecture-card {
   min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.architecture-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.architecture-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.9rem;
+  background: rgba($accent, 0.1);
+  color: $accent;
+  flex: 0 0 auto;
+}
+
+.architecture-card__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.architecture-card__header h3 {
+  margin-top: 0;
 }
 
 .architecture-flow {
@@ -904,13 +936,6 @@
     grid-template-columns: 1fr;
   }
 
-  .architecture-diagram__row {
-    grid-template-columns: 1fr;
-  }
-
-  .architecture-diagram__note {
-    text-align: left;
-  }
 }
 
 @media (max-width: 640px) {
