@@ -74,6 +74,21 @@ description: "Leafcuttr is a multi-protocol edge gateway built on top of Apache 
       <span>Meet Leafcuttr</span>
     </h2>
     <p class="section-lead">An Apache Kafka compatible event broker built for high-velocity data over flaky networks and constrained devices.</p>
+    
+    <figure class="architecture-diagram card" aria-label="Leafcuttr architecture overview">
+      <img
+        class="architecture-diagram__img"
+        src="{{ '/assets/images/architecture-dark.png' | relative_url }}"
+        alt="Leafcuttr deployment architecture showing Embedded Mode (Leafcuttr inside the device) and Gateway Mode (Leafcuttr on a dedicated gateway device), both connecting edge devices via Kafka, MQTT, and HTTP to a Mothership Cluster."
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption class="architecture-diagram__caption">
+        <span class="architecture-diagram__caption-badge">Embedded Mode</span> — Leafcuttr runs inside each device.&ensp;
+        <span class="architecture-diagram__caption-badge architecture-diagram__caption-badge--alt">Gateway Mode</span> — Leafcuttr runs on a dedicated gateway, aggregating data from surrounding devices.
+      </figcaption>
+    </figure>
+
     <div class="solution-row">
       <article class="solution-item">
         <div class="solution-item__header">

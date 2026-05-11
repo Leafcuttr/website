@@ -12,20 +12,6 @@ description: "Leafcuttr separates management, control, and data planes so edge s
       <p class="section-lead">Leafcuttr splits management, control, and data planes so edge workloads stay lean, operators stay in control, and data movement stays intentional.</p>
     </div>
 
-    <figure class="architecture-diagram card" aria-label="Leafcuttr architecture overview">
-      <img
-        class="architecture-diagram__img"
-        src="{{ '/assets/images/architecture-img1.jpeg' | relative_url }}"
-        alt="Leafcuttr deployment architecture showing Embedded Mode (Leafcuttr inside the device) and Gateway Mode (Leafcuttr on a dedicated gateway device), both connecting edge devices via Kafka, MQTT, and HTTP to a Mothership Cluster."
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption class="architecture-diagram__caption">
-        <span class="architecture-diagram__caption-badge">Embedded Mode</span> — Leafcuttr runs inside each device.&ensp;
-        <span class="architecture-diagram__caption-badge architecture-diagram__caption-badge--alt">Gateway Mode</span> — Leafcuttr runs on a dedicated gateway, aggregating data from surrounding devices.
-      </figcaption>
-    </figure>
-
     <div class="architecture-grid">
       <article class="card architecture-card">
         <div class="architecture-card__header">
